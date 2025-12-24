@@ -17,7 +17,7 @@ plugins {
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
@@ -30,5 +30,10 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainClassName = 'ch.abbts.ndsswe.App'
+    mainClass = 'ch.abbts.ndsswe.App'
 }
+
+run {
+    standardInput = System.in
+}
+
